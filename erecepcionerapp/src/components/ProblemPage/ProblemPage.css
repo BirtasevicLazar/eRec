@@ -1,0 +1,99 @@
+.image-container1 {
+  height: 100vh;
+  background: url('../../assets/slike/problem.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 56px; /* Dodaj padding da se sadržaj ne preklapa sa navbarom */
+  position: relative;
+}
+  
+  .image-container1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Visina crnog dela na dnu */
+    background: linear-gradient(to top, black, transparent);
+    z-index: 1;
+  }
+  
+  .image-container1 .welcome-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .welcome-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+  }
+
+  .problem-form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 90%; /* Osigurava responzivnost */
+  }
+  
+  .problem-form-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center; /* Centriraj naslov */
+  }
+  
+  .problem-form-container .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .problem-form-container .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.75rem; /* Povećaj padding za bolji izgled */
+  }
+  
+  .problem-form-container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    width: 100%; /* Dugme zauzima celu širinu */
+    font-size: 1rem; /* Povećaj font */
+  }
+  
+  .problem-form-container .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  @media (max-width: 768px) {
+    .problem-form-container {
+      padding: 1.5rem;
+    }
+  
+    .problem-form-container h2 {
+      font-size: 1.5rem; /* Smanji font na manjim ekranima */
+    }
+  
+    .problem-form-container .form-control {
+      padding: 0.5rem; /* Smanji padding na manjim ekranima */
+    }
+  
+    .problem-form-container .btn-primary {
+      padding: 0.5rem 1rem; /* Smanji padding na dugmetu */
+      font-size: 0.875rem; /* Smanji font na dugmetu */
+    }
+  }
+
+  
